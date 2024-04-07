@@ -1,0 +1,213 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav {
+  background: linear-gradient(to right, #706b64, #583e21);
+  /* Gradient from Copilot blue shades */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-ul li a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  /* Light grey text */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.nav-ul li a:hover {
+  color: #FFD700;
+  ;
+}
+
+.nav-ul {
+  padding: 5px;
+  margin: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 70px;
+  float: left;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+h2 {
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
+.resultContainer {
+  position: absolute;
+  top: 16%;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.trueNews {
+  margin-top: 35%;
+  background-color: #0e3111;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  /* Text color */
+  font-weight: bold;
+  margin-left: 10px;
+  /* Adjust as needed */
+}
+
+.fakeNews {
+  margin-top: 35%;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  /* Text color */
+  background-color: red;
+  font-weight: bold;
+  margin-left: 10px;
+  /* Adjust as needed */
+}
+
+.resultContainer p {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.inputContainer {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.stamp {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  /* Text color */
+  font-weight: bold;
+  margin-left: 10px;
+  /* Adjust as needed */
+}
+
+.inputBox {
+  display: block;
+  flex: 1;
+  margin-left: 25%;
+  padding: 10px;
+  width: 30%;
+  height: 80px;
+  border: 2px solid #ccc; /* Set border style */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  font-size: 16px;
+  color: #333;
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a shadow to create depth */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputBox:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add box shadow on focus */
+}
+
+.inputBox:hover{
+  background-color: hsla(228, 3%, 30%, 0.349);
+}
+.appButton {
+  margin: 25px;
+  margin-left: 35%;
+  width: 15%;
+  padding: 1% 2%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #521612c9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.section h2, .section h3 {
+  color: #333;
+}
+
+.section p, .section li {
+  color: #666;
+}
+
+.modelImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.appButton:hover {
+  background-color: #df0202f1;
+}
+
+.spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav a {
+    margin: 0 10px;
+  }
+}
